@@ -33,7 +33,7 @@ class TriangleGrid:
 
         if self.cell_width % 1 != 0 or self.cell_height % 1 != 0:
             raise ValueError(
-                f"Cell dimensions evaluate to integers. Given height: {height}, width: {width}, rows: {rows}, cols: {cols} -> cell size: ({self.cell_width}, {self.cell_height}) Ratio of height/rows and width/cols must yield integer values."
+                f"Cell dimensions must evaluate to integers. Given height: {height}, width: {width}, rows: {rows}, cols: {cols} -> cell size: ({self.cell_width}, {self.cell_height}) Ratio of height/rows and width/columns must yield integer values."
             )
 
     def coordinate_validation(self, x: int, y: int):
