@@ -94,10 +94,10 @@ class TestTriangleGrid(unittest.TestCase):
 
 def load_tests(loader, tests, pattern):
     suite = unittest.TestSuite()
-    for x in range(10, 200, 10):
-        for y in range(10, 200, 10):
-            for rows in range(1, 51, 5):
-                for cols in range(1, 51, 5):
+    for x in range(10, 101, 10):
+        for y in range(10, 101, 10):
+            for rows in range(1, 31):
+                for cols in range(1, 31):
                     if (x % cols) or (y % rows):
                         # skip non-integer cell sizes,
                         # I'm assuming that triangles with fractional pixel vertices
